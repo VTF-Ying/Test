@@ -3,6 +3,7 @@ public class Person implements MyInterface,MyInfterface2 {
     private int id;
     private String name;
     private int age;
+    public String desc;
 
     public int getId() {
         return id;
@@ -34,6 +35,13 @@ public class Person implements MyInterface,MyInfterface2 {
 
     private void privateMethod(){
         System.out.println("private Method....");
+    }
+    private void privateMethod2(String name){
+        System.out.println("private Method...."+name);
+    }
+
+    private Person(String name){
+        this.name=name;
     }
 
     public Person(int id, String name, int age) {
