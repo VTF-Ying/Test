@@ -1,16 +1,16 @@
-package com.vtf.test.IO;
+package com.vtf.test.io;
 
 import java.io.File;
 import java.io.IOException;
 
 /**
  * @ProjectName: Test
- * @ClassName: test1
+ * @ClassName: Test1
  * @Description: TODO(File类测试)
  * @Author: VTF
  * @create: 2020-04-29 16:27
  */
-public class test1 {
+public class Test1 {
     public static void main(String[] args) {
                                         // 也可以写成  D:/Test/IOTest/a/a.txt
         File f = new File("D:\\Test\\IOTest\\a\\a.txt"); //file这个时候 就是 a.txt
