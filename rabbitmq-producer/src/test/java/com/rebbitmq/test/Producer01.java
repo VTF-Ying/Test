@@ -29,7 +29,7 @@ public class Producer01 {
         //设置虚拟机  一个mq可以设置多个虚拟机  每个虚拟机相当于多个mq
         connectionFactory.setVirtualHost("/");
         //建立新连接
-        Connection connection =null;
+        Connection connection = null;
         Channel channel = null;
         try {
             connection = connectionFactory.newConnection();
@@ -44,7 +44,7 @@ public class Producer01 {
              * 4.autoDelete 自动删除,队列队列不再使用时 是否自动删除队列 如果将此参数和exclusive设置为true时就可以实现临时队列(队列不用自动删除)
              * 5.arguments 队列参数,可以设置一个队列的拓展参数,比如说可以设置存活时间
              */
-            channel.queueDeclare(QUEUE,true,false,false,null);
+            channel.queueDeclare(QUEUE, true, false, false, null);
             //发送消息
             //basicPublish(String exchange, String routingKey, BasicProperties props, byte[] body)
             /**
@@ -55,7 +55,7 @@ public class Producer01 {
              * 4.body,消息内容
              */
             String message = "hello 李昱颖";
-            channel.basicPublish("",QUEUE,null,message.getBytes());
+            channel.basicPublish("", QUEUE, null, message.getBytes());
             System.out.println("send to mq " + message);
         } catch (Exception e) {
             e.printStackTrace();

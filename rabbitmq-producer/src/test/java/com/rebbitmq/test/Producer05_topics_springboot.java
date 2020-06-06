@@ -1,7 +1,6 @@
 package com.rebbitmq.test;
 
 
-
 import com.rabbit.test.Application;
 import com.rabbit.test.config.RabbitmqConfig;
 import org.junit.Test;
@@ -20,11 +19,11 @@ public class Producer05_topics_springboot {
     RabbitTemplate rabbitTemplate;
 
     @Test
-    public void testSendByTopics(){
-        for (int i=0;i<5;i++){
-            String message = "sms 邮件 inform to 武大凯"+i;
+    public void testSendByTopics() {
+        for (int i = 0; i < 5; i++) {
+            String message = "sms 邮件 inform to 武大凯" + i;
 
-            rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPCIS_INFORM,"inform.email",message);
+            rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPCIS_INFORM, "inform.email", message);
             System.out.println(message);
         }
     }
