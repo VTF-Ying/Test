@@ -8,15 +8,11 @@ package com.vtf.service.test.entity;
  * @create: 2020-05-27 16:23
  */
 public class Student {
-    private Long id;
+    private String id;
     private String stuName;
-    private int age;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -28,11 +24,16 @@ public class Student {
         this.stuName = stuName;
     }
 
-    public int getAge() {
-        return age;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", stuName='" + stuName + '\'' +
+                '}';
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public Student(String id, String stuName) {
+        this.id = id;
+        this.stuName = stuName;
     }
 }

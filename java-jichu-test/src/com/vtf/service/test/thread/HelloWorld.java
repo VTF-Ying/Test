@@ -14,18 +14,6 @@ import java.util.*;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        List<Student> list = new ArrayList<>();
-
-        for (int i = 0; i < 10; i++) {
-            Student stu = new Student();
-            stu.setId(1L);
-            stu.setStuName("好");
-            list.add(stu);
-        }
-      list.forEach(e-> e.setAge(100));
-        for (Student student : list) {
-            System.out.println(student.getId()+"-"+student.getAge()+"-"+student.getStuName());
-        }
        
     }
 }
