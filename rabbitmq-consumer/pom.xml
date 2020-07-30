@@ -11,8 +11,8 @@
     <name>rabbitmq-consumer</name>
 
     <parent>
-        <groupId>com.rabbitmq.test</groupId>
-        <artifactId>test</artifactId>
+        <groupId>com.vtf.test</groupId>
+        <artifactId>logtest</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -31,6 +31,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
