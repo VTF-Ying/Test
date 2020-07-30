@@ -9,7 +9,7 @@ package com.vtf.service.test.entity;
  */
 public class Student {
     private String id;
-    private String stuName;
+    private String stuName = "张三";
 
 
     public void setId(String id) {
@@ -32,8 +32,4 @@ public class Student {
                 '}';
     }
 
-    public Student(String id, String stuName) {
-        this.id = id;
-        this.stuName = stuName;
-    }
 }
