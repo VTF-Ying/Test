@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * @ProjectName: test
  * @ClassName: FileDemo5
- * @Description: TODO(File 的高级获取功能  listFile)
+ * @Description: TODO(File 的高级获取功能 listFile)
  * @Author: VTF
  * @create: 2020-07-30 15:22
  */
@@ -24,9 +24,9 @@ public class FileDemo5 {
         // 包括隐藏文件和隐藏文件夹 都可以获取
 
         // 此方法注意事项:
-            // 1. 当调用者是一个文件时                         会报空指针异常
-            // 2. 当调用者是一个空文件夹时                     会返回数组长度0
-            // 3. 当调用者是一个有权限才能进入的文件件时       会返回 null
+        // 1. 当调用者是一个文件时                         会报空指针异常
+        // 2. 当调用者是一个空文件夹时                     会返回数组长度0
+        // 3. 当调用者是一个有权限才能进入的文件件时       会返回 null
 
 
     }

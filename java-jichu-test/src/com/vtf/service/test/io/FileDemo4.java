@@ -11,10 +11,10 @@ import java.io.File;
  */
 public class FileDemo4 {
     /**
-     *  public boolean isDirectory()   是否是文件夹
-     *  public boolean isFile()        是否是文件
-     *  public boolean exists()        测试此抽象路径名表示的文件或目录是否存在
-     *  public boolean getName()       获取文件名
+     * public boolean isDirectory()   是否是文件夹
+     * public boolean isFile()        是否是文件
+     * public boolean exists()        测试此抽象路径名表示的文件或目录是否存在
+     * public boolean getName()       获取文件名
      **/
     public static void main(String[] args) {
         // method1();
@@ -22,8 +22,8 @@ public class FileDemo4 {
         // method3();
 
         // 注意点
-            // 1. 如果获取的是文件，那么获取的是文件名和文件的后缀
-            // 2. 如果调用者是一个文件夹 那么获取的是文件的名字
+        // 1. 如果获取的是文件，那么获取的是文件名和文件的后缀
+        // 2. 如果调用者是一个文件夹 那么获取的是文件的名字
         File file = new File("a.txt");
         String name = file.getName();
         System.out.println(name);

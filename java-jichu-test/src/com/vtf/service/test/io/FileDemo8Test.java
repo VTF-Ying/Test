@@ -9,6 +9,6 @@ package com.vtf.service.test.io;
  */
 public class FileDemo8Test {
     public static void main(String[] args) {
-        
+
     }
 }

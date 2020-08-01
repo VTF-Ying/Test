@@ -13,10 +13,10 @@ import java.io.IOException;
 public class FileDemo6Test {
     public static void main(String[] args) throws IOException {
         File file = new File("java-jichu-test\\aaa");
-        if (!file.exists()){
+        if (!file.exists()) {
             file.mkdirs();
         }
-        File newFile = new File(file,"a.txt");
+        File newFile = new File(file, "a.txt");
         boolean result = newFile.createNewFile();
         System.out.println(result);
     }

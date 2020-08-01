@@ -11,20 +11,20 @@ import java.io.File;
  */
 public class FileDemo1 {
     public static void main(String[] args) {
-        // method1();
+        method1();
         // method2();
         // method3();
     }
 
     private static void method3() {
-        File file = new File("D:\\local\\user");
+        File file = new File("java-jichu-test/src/com/vtf/service/test/io/txt/");
         String path = "a.txt";
         File file1 = new File(file, path);
         System.out.println(file1);
     }
 
     private static void method2() {
-        String path1 = "D:\\local\\user";
+        String path1 = "java-jichu-test/src/com/vtf/service/test/io/txt";
         String path2 = "a.txt";
         File file = new File(path1, path2);
         System.out.println(file);
@@ -32,7 +32,7 @@ public class FileDemo1 {
 
     private static void method1() {
         // File(String pathname)
-        String path = "D:\\local\\user\\a.txt";
+        String path = "java-jichu-test/src/com/vtf/service/test/io/txt/a.txt/a.txt";
         File file = new File(path);
     }
 }
