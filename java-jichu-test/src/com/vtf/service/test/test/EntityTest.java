@@ -12,7 +12,7 @@ import com.vtf.service.test.entity.Student;
 public class EntityTest {
     public static void main(String[] args) {
         Student stu = new Student();
-        stu.setId("12");
+        stu.setId(12L);
         System.out.println(stu);
     }
 }

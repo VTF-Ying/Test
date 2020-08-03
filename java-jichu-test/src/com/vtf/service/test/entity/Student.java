@@ -7,29 +7,14 @@ package com.vtf.service.test.entity;
  * @Author: VTF
  * @create: 2020-05-27 16:23
  */
-public class Student {
-    private String id;
-    private String stuName = "张三";
+public class Student extends Person {
+    private String className;
 
-
-    public void setId(String id) {
-        this.id = id;
+    public String getClassName() {
+        return className;
     }
 
-    public String getStuName() {
-        return stuName;
+    public void setClassName(String className) {
+        this.className = className;
     }
-
-    public void setStuName(String stuName) {
-        this.stuName = stuName;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", stuName='" + stuName + '\'' +
-                '}';
-    }
-
 }

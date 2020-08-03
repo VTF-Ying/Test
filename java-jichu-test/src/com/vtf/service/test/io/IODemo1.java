@@ -1,8 +1,5 @@
 package com.vtf.service.test.io;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 

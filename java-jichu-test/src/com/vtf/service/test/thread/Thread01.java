@@ -10,17 +10,17 @@ package com.vtf.service.test.thread;
 public class Thread01 {
     public static void main(String[] args) {
         // 创建线程实例
-        ThreadDemo th = new ThreadDemo();
+       // ThreadDemo th = new ThreadDemo();
         // 修改线程名称
-        th.setName("线程0");
+       // th.setName("线程0");
         // 启动线程
-        th.start();
+       // th.start();
 
         // 创建线程实例
-        ThreadDemo th2 = new ThreadDemo();
+        //ThreadDemo th2 = new ThreadDemo();
         // 修改线程名称
-        th2.setName("线程1");
+       // th2.setName("线程1");
         // 启动线程
-        th2.start();
+       // th2.start();
     }
 }
