@@ -1,6 +1,5 @@
 package com.vtf.service.test.test;
 
-import com.vtf.service.test.entity.Person;
 import com.vtf.service.test.entity.Student;
 
 /**
@@ -25,14 +24,14 @@ public class NullEqualsTest {
         student1.setName("于谦");
         student1.setClassName(null);
 
-       if(student.getClassName()!=null){
-           if(student.getClassName().equals(student1.getClassName())){
-               System.out.println("没问题");
-           }else{
-               System.out.println("不符要求");
-           }
-       }else{
-           System.out.println("没进方法");
-       }
+        if (student.getClassName() != null) {
+            if (student.getClassName().equals(student1.getClassName())) {
+                System.out.println("没问题");
+            } else {
+                System.out.println("不符要求");
+            }
+        } else {
+            System.out.println("没进方法");
+        }
     }
 }
